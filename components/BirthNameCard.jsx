@@ -60,7 +60,7 @@ function BirthNameCard() {
                </div>
 
                <div className="flex flex-col justify-center items-center py-2 capitalize w-full">
-                <p className="text-xs ">{data?.akans?.male}</p>
+                <p className="text-xs ">{data?.akans.male}</p>
                </div>
 
                <div className="flex flex-col justify-center items-center py-2 capitalize  w-full">
@@ -78,11 +78,11 @@ function BirthNameCard() {
                </div>
 
                <div className="flex flex-col justify-center items-center py-2 capitalize w-full">
-                <p className="text-xs text-start">{data?.fantis?.male}</p>
+                <p className="text-xs text-start">{data?.fantis.male}</p>
                </div>
 
                <div className="flex flex-col justify-center items-center py-2 capitalize w-full">
-                <p className="text-xs">{data?.fantis?.female}</p>
+                <p className="text-xs">{data?.fantis.female}</p>
                </div>
             </div>
 
@@ -95,11 +95,11 @@ function BirthNameCard() {
                </div>
 
                <div className="flex flex-col justify-center items-center py-2 capitalize    w-full">
-                <p className="text-xs">{data?.ewes?.female}</p>
+                <p className="text-xs">{data?.ewes.female}</p>
                </div>
 
                <div className="flex flex-col justify-center items-center py-2 capitalize   w-full">
-                <p className="text-xs">{data?.ewes?.female}</p>
+                <p className="text-xs">{data?.ewes.female}</p>
                </div>
             </div>
             
