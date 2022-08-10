@@ -52,4 +52,4 @@
     }
 ];
 
-// export default weekdays;
+// export default weekdaysData;

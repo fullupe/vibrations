@@ -16,7 +16,7 @@ function BirthNameCard() {
   useEffect(()=>{
 
     weekdays?.map((week)=>{
-      if(week.day==userData?.yourDay){
+      if(week.day==userData.yourDay){
         setData(week)
       }
     })
@@ -27,7 +27,7 @@ function BirthNameCard() {
   return (
     <div className=" flex py-2 mb-2 md:mb-12 flex-col space-y-4 items-center text-center p-1 select-none rounded-lg bg-[#AAFDee000] ">
           <div className="flex flex-col justify-center items-center  w-full">
-              {/* <p>Header</p> */}
+            
               <div className="flex flex-col h-12 w-44 bg-orange-000 rounded- justify-centers items-centesr border-0 m-1">
                    <p className="text-sm text-start text-white font-poppins ">Ghanaian Tribe's</p>
                   <p className="text-2xl text-orange-700 font-poppins">Naming's</p>
@@ -36,7 +36,7 @@ function BirthNameCard() {
 
           </div>
           <div className="flex flex-col  overflow-y-scroll scrollbar-hide pt-8  rounded-fulld w-full h-96 space-y-2 border-b-2 border-t-2 border-yellow-000  overflow-hidden items-center font-cinzel " >
-            {/* <img className="rounded-full w-44" src={null} /> */}
+         
 
 
                     <div className="flex   w-96  justify-between px-6 ">

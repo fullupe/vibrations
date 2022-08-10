@@ -122,9 +122,12 @@ function HomeEntry({setSubmitdat}:props, {submitdate}:props) {
 
 
        const SubmitUserDate=()=>{
-        const dateReady = `${selectedYear}${selectedMonth}${selectedDay}`
+        const dateReady = `${selectedYear}${selectedMonth}${selectedDay}`;
 
-        const dateReady1 = `${selectedYear} ${selectedMonth} ${selectedDay}`
+        //let dateReady1 = `${selectedYear} ${selectedMonth} ${selectedDay}`;
+
+
+        //console.log("see",dateReady1)
 
         //console.log("lets see",dateReady1)
        
@@ -134,8 +137,8 @@ function HomeEntry({setSubmitdat}:props, {submitdate}:props) {
 
        let userData ={
          yourNumber: digitSum(dateReady),
-         yourDay:reduceDate(dateReady1),
-         yourSign:selectedElement
+         yourDay:reduceDate(`${selectedYear}/${selectedMonth}/${selectedDay}`),
+         yourSign:selectedElement,
        } 
 
        dispatch(addWeekDay(userData))
@@ -151,13 +154,13 @@ function HomeEntry({setSubmitdat}:props, {submitdate}:props) {
 
        
       }
-      console.log(selectedElement)
+      
 
 
 
   return (
     <div>
-        <div className="flex  h-[500px] items-center bg-blue-000  justify-center">
+        <div className="flex  h-[400px] items-center bg-blue-000  justify-center">
 
 <select onChange={(e) => setSelectedYear(e.target.value)}
             value={selectedYear} className="px-6 font-poppins py-2 rounded-full  w-23 m-4 text-white italic outline-none opacity-80 bg-red-500" id="year" name="year">
