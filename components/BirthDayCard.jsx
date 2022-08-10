@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-// import {weekdays} from ".././weekDaysData"
+import {weekdays} from ".././weekDaysData"
 
-import weekdays  from "../NumberData"
+// import {weekdays}  from "../NumberData"
 
 function BirthDayCard() {
   const userData = useSelector((state) => state.weekday.value)
@@ -28,7 +28,7 @@ function BirthDayCard() {
               {/* <p>Header</p> */}
               <div className="flex flex-col h-12 w-44 bg-orange-000 rounded- justify-centers items-centesr border-0 m-1">
                    <p className="text-sm text-start text-white font-poppins ">Born On A</p>
-                  <p className="text-2xl text-orange-700 font-poppins text-">{userData?.yourDay}</p>
+                  <p className="text-2xl text-orange-700 font-poppins text-">{userData.yourDay}</p>
               </div>
               
 

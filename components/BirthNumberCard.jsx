@@ -2,7 +2,7 @@ import React,{useState, useEffect} from 'react';
 //import type { RootState } from '../store'
 import { useSelector, useDispatch } from 'react-redux'
 
-import numbers from "../NumberData"
+import {numbers} from "../NumberData"
 
 
 function BirthNumberCard() {

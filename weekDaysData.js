@@ -1,4 +1,4 @@
-export const weekdays=[
+ export const weekdays=[
     {
         day:"Monday",
         message : "The Moon Monday is a moon day, and so we are dealing with emotions, moods, intuition and the shadowy side of life.  Many people report Monday as the most challenging day of the week.  It’s no wonder, as the moon carries with it erratic and sometimes unpredictable energy.  We can counteract fast fluctuations in lunar energy by taking note of the phase of the moon every Monday.  This lets our logical mind know “where we stand” in a metaphorical sense  Best tasks for Mondays: Meditation, dream analysis, quiet time, personal indulgence, rest, relaxation, sleep.",
@@ -51,3 +51,5 @@ export const weekdays=[
         ewes:{male:"korshi", female:"kwashiwor"},
     }
 ];
+
+// export default weekdays;
