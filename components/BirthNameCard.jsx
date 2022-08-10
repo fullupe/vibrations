@@ -4,7 +4,7 @@ import { BiMale,BiFemale } from 'react-icons/bi'
 import { GiGreatPyramid} from 'react-icons/gi'
 import { useSelector, useDispatch } from 'react-redux'
 
-import {weekdays} from ".././weekDaysData"
+import {weekdays} from "../weekDaysData"
 
 
 function BirthNameCard() {
