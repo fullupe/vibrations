@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 // import {weekdays} from ".././weekDaysData"
 
-import {weekdays}  from "../NumberData"
+import {weekdays}  from ".././NumberData"
 
 function BirthDayCard() {
   const userData = useSelector((state) => state.weekday.value)
