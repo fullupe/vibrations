@@ -21,7 +21,7 @@ function BirthNumberCard() {
   },[])
   
 
-  console.log("singleData",data)
+  //console.log("singleData",data)
 
   return (
     <div className=" flex py-2 mb-2 md:mb-12 flex-col space-y-4 items-center text-center p-1 select-none rounded-lg bg-[#AAFDee000] ">
@@ -56,9 +56,9 @@ function BirthNumberCard() {
                 <p className="border-b-2 p-1 text-gray-200 font-tapestry ">Personality</p>
 
               <div className="grid grid-cols-2 gap-2 ">
-                {data?.personality.map((per)=>(
+                {data?.personality.map((per, index)=>(
                   <div className=" flex space-x-2 italic text-transparent bg-clip-text bg-gradient-to-r from-purple-900 to-pink-600"> 
-                    ⍟  <p className="ml-1">{per}</p>
+                    ⍟  <p key={index} className="ml-1">{per}</p>
                     
                   </div>
                 ))}

@@ -10,7 +10,7 @@ import BirthSignCard from './BirthSignsCard'
 import BirthNameCard from './BirthNameCard'
 import BirthElement from "./BirthElementsCard"
 
-const dataClient=[<BirthNumberCard />,<BirthDayCard/>,<BirthSignCard/>,<BirthElement/>,<BirthNameCard/>]
+const dataClient=[<BirthNumberCard/>,<BirthDayCard/>,<BirthSignCard/>,<BirthElement/>,<BirthNameCard/>]
 
 function Feed() {
   return (
@@ -27,8 +27,8 @@ function Feed() {
          pagination={{ clickable: true }}
         
       >
-        {dataClient.map((review)=>(
-         <SwiperSlide key={Math.random()} className=" flex py-2 mb-2 md:mb-12 flex-col space-y-4 items-center text-center p-1 select-none rounded-lg bg-[#AAFD] ">
+        {dataClient.map((review,index)=>(
+         <SwiperSlide key={index} className=" flex py-2 mb-2 md:mb-12 flex-col space-y-4 items-center text-center p-1 select-none rounded-lg bg-[#AAFD] ">
           
           {review}
           

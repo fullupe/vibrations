@@ -1,13 +1,15 @@
 //import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import type { NextPage } from 'next'
 import { useState,useEffect} from 'react'
 import { IoIosArrowDropleft } from 'react-icons/io'
 import HomeEntry from '../components/HomeEntry';
 import Feed from "../components/Feed";
+import Adsense from "../components/Adsense"
 
 
-const Home = () => {
+const Home: NextPage = () => {
 
   const [mybox, setMybox]=useState(null)
 
@@ -32,13 +34,13 @@ const Home = () => {
  //useEffect(()=>{
 
 
-  function digitSum(n) {
+  function digitSum(n:any) {
    
     while(!(n % 10 === n)) {
       if(n===11) return n;
       if(n===22) return n;
       if(n===33) return n; 
-      n = n.toString().split('').reduce((acc, curr) => acc + parseInt(curr), 0);
+      n = n.toString().split('').reduce((acc:any, curr:any) => acc + parseInt(curr), 0);
     }
 
     return n;
@@ -78,6 +80,8 @@ const Home = () => {
         <div className=" items-center m-4 flex w-full h-full cursor-pointer z-10">
 
         <IoIosArrowDropleft onClick={()=>setSubmitdat(false)} className="text-white text-4xl"/>
+
+        <Adsense/>
       
         </div>
 

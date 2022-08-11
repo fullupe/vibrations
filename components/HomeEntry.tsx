@@ -163,16 +163,16 @@ function HomeEntry({setSubmitdat}:props, {submitdate}:props) {
         <div className="flex  h-[400px] items-center bg-blue-000  justify-center">
 
 <select onChange={(e) => setSelectedYear(e.target.value)}
-            value={selectedYear} className="px-6 font-poppins py-2 rounded-full  w-23 m-4 text-white italic outline-none opacity-80 bg-red-500" id="year" name="year">
-<option className="">year</option>
+            value={selectedYear} className="px-4 text-lg text-center  hover:cursor-pointer font-poppins py-2 rounded-full  w-23 m-4 text-white italic outline-none opacity-80 bg-red-500" id="year" name="year">
+<option className="text-lg">Year</option>
 {years.map((year: number )=>(
   <option  key={year} value={year}>{year}</option>  
 ))}
   </select>
   <select onChange={(e) => setSelectedMonth(e.target.value)}
-            value={selectedMonth} className="px-6 font-poppins py-2 rounded-full w-23 m-4 text-white italic outline-none opacity-80 bg-red-500" id="month" name="month">
+            value={selectedMonth} className="px-4 text-lg text-center hover:cursor-pointer font-poppins py-2 rounded-full w-23 m-4 text-white italic outline-none opacity-80 bg-red-500" id="month" name="month">
   
-<option>Month</option>
+<option className="text-lg">Month</option>
 <option value="1">January</option>
 <option value="2">February</option>
 <option value="3">March</option>
@@ -188,8 +188,8 @@ function HomeEntry({setSubmitdat}:props, {submitdate}:props) {
 </select>
 
 <select onChange={(e) => setSelectedDay(e.target.value)}
-            value={selectedDay} className="px-6 py-2 font-poppins rounded-full w-23 m-4 text-white italic outline-none opacity-80 bg-red-500" id="Day" name="Day">
-<option>Day</option>
+            value={selectedDay} className="px-4 py-2 text-lg text-center  hover:cursor-pointer font-poppins rounded-full w-23 m-4 text-white italic outline-none opacity-80 bg-red-500" id="Day" name="Day">
+<option className="text-lg">Day</option>
 
 {days.map((day:number)=>(
     
