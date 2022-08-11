@@ -1,14 +1,18 @@
 import { useState,useEffect} from 'react'
 
-import { IoIosArrowDropleft } from 'react-icons/io'
+import { FaRegArrowAltCircleDown } from 'react-icons/fa'
 
 import { useSelector, useDispatch } from 'react-redux'
 
 import {addWeekDay} from "../slices/WeekDaySlice"
 
+import { BallTriangle,Circles } from  'react-loader-spinner'
+
 interface props{ 
   setSubmitdat:any
   submitdate:any
+  // Loading:any
+  //SetLoading:any
 }
 
 
@@ -133,7 +137,7 @@ function HomeEntry({setSubmitdat}:props, {submitdate}:props) {
        
        //dispatch(addDate( digitSum(dateReady)))
 
-       console.log("check",dateReady)
+       //console.log("check",dateReady)
 
        let userData ={
          yourNumber: digitSum(dateReady),
@@ -143,14 +147,11 @@ function HomeEntry({setSubmitdat}:props, {submitdate}:props) {
 
        dispatch(addWeekDay(userData))
 
-       //dispatch(addWeekDay("goooooal"))
-
-       //dispatch(addElement(selectedElement))
-       //dispatch(addYourEle("papa"))
-
-       //console.log("el",selectedElement)
+       
 
        setSubmitdat(!submitdate)
+
+
 
        
       }
@@ -159,8 +160,19 @@ function HomeEntry({setSubmitdat}:props, {submitdate}:props) {
 
 
   return (
-    <div>
+    <div className="flex flex-col items-center">
+
+       {
+        
+       selectedDay && <>
+        <Circles color="#FC6238" height={50} width={80} />
+        <p className="text-white font-poppins italic">Ready...🚀</p>
+       
+       </> 
+       }
+
         <div className="flex  h-[400px] items-center bg-blue-000  justify-center">
+       
 
 <select onChange={(e) => setSelectedYear(e.target.value)}
             value={selectedYear} className="px-4 text-lg text-center  hover:cursor-pointer font-poppins py-2 rounded-full  w-23 m-4 text-white italic outline-none opacity-80 bg-red-500" id="year" name="year">
@@ -199,7 +211,13 @@ function HomeEntry({setSubmitdat}:props, {submitdate}:props) {
 
 </div>
 
-<div onClick={SubmitUserDate} className="flex w-full justify-center p-8">
+<div onClick={SubmitUserDate} className="flex flex-col items-center w-full justify-center p-8">
+
+  {/* <p className="text-green-900">down</p> */}
+{
+selectedDay  &&
+  <FaRegArrowAltCircleDown className="text-white animate-bounce"/>
+}
 <input
          className=" h-full bg-[#a2203e] hover:cursor-pointer font-poppins  w-44 hover:bg-[#530319] text-white font-bold opacity-80 py-2 px-4 rounded-full transition-all my-5"
           type="submit"

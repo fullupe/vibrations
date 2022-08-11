@@ -6,10 +6,14 @@ import { useState,useEffect} from 'react'
 import { IoIosArrowDropleft } from 'react-icons/io'
 import HomeEntry from '../components/HomeEntry';
 import Feed from "../components/Feed";
-import Adsense from "../components/Adsense"
+import Adsense from "../components/Adsense";
+
+
 
 
 const Home: NextPage = () => {
+
+  const[Loading, SetLoading] = useState<boolean>(false)
 
   const [mybox, setMybox]=useState(null)
 
@@ -53,16 +57,9 @@ const Home: NextPage = () => {
 
  //},[])
 
-
-
-
-   
-
- 
- 
-
-
- 
+ setTimeout(() => {
+  SetLoading(true);
+  }, 6000)
 
 
   return (
@@ -72,7 +69,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-  <div className=" flex flex-col justify-center items-center  w-full h-full bg-[url('https://d3h2k7ug3o5pb3.cloudfront.net/image/2020-11-23/6ace9bb0-2d79-11eb-9dcd-8b2ef5358591.jpg')] bg-repeat-none bg-cover bg-center max-w-[450px] mx-12 rounded-lg relative overflow-hidden">
+  <div className=" flex flex-col justify-center items-center  w-full  bg-[url('https://d3h2k7ug3o5pb3.cloudfront.net/image/2020-11-23/6ace9bb0-2d79-11eb-9dcd-8b2ef5358591.jpg')] bg-repeat-none bg-cover bg-center max-w-[450px] mx-12 rounded-lg relative overflow-hidden">
 
 
 
@@ -105,11 +102,33 @@ const Home: NextPage = () => {
     </div> 
 
     {!submitdate ? (
-       <HomeEntry setSubmitdat={setSubmitdat} submitdate={submitdate} />
+       <HomeEntry setSubmitdat={setSubmitdat} submitdate={submitdate}/>
 
     ):(
-     
+    
       <Feed/> 
+     
+      //   <>
+ 
+
+      //   {
+
+
+      //  Loading ? (
+
+      //    <Circles color="#FC6238" height={50} width={80} />
+      //  ):(
+
+      //    <Feed/> 
+      //  )
+      
+      //   }
+
+      //   </>
+
+      
+        
+
     )}
     </div>
     </div>
