@@ -16,7 +16,7 @@ const dataClient=[<BirthNumberCard/>,<BirthDayCard/>,<BirthSignCard/>,<BirthElem
 function Feed() {
   return (
     <section  className=" flex flex-col h-4/5 w-full  bg-red-000  items-center  bg-red-000">
-      {/* <h5 className="text-xl  text-white font-cinzel mb-2">Review from client's</h5> */}
+   
       <h2 className="text-4xl  text-white font-extrabold font-poppins italic text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600  " >Numerology</h2>
 
       <Swiper className="flex  flex-col h-full w-96  gap-5 mt-4  "

@@ -11,8 +11,7 @@ import { BallTriangle,Circles } from  'react-loader-spinner'
 interface props{ 
   setSubmitdat:any
   submitdate:any
-  // Loading:any
-  //SetLoading:any
+  
 }
 
 
@@ -211,19 +210,21 @@ function HomeEntry({setSubmitdat}:props, {submitdate}:props) {
 
 </div>
 
-<div onClick={SubmitUserDate} className="flex flex-col items-center w-full justify-center p-8">
+<div    className="flex flex-col items-center w-full justify-center p-8">
 
-  {/* <p className="text-green-900">down</p> */}
 {
 selectedDay  &&
   <FaRegArrowAltCircleDown className="text-white animate-bounce"/>
 }
-<input
+<button
          className=" h-full bg-[#a2203e] hover:cursor-pointer font-poppins  w-44 hover:bg-[#530319] text-white font-bold opacity-80 py-2 px-4 rounded-full transition-all my-5"
-          type="submit"
-          id="Submit"
           
-        />
+          disabled={!selectedDay || !selectedMonth || !selectedYear}
+          onClick={SubmitUserDate}
+          
+        >
+        Submit
+        </button>
 </div>
 
     </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import {weekdays} from "../weekDaysData";
+
+import {weekdays} from "../NumberData"
 import { FaLocationArrow} from 'react-icons/fa'
 
 
@@ -22,7 +23,7 @@ function BirthPersonalityDays() {
   return (
     <div className=" flex py-2 mb-2 md:mb-12 flex-col space-y-4 items-center text-center p-1 select-none rounded-lg bg-[#AAFDee000] ">
           <div className="flex flex-col justify-center items-center  w-full">
-              {/* <p>Header</p> */}
+      
               <div className="flex flex-col h-12 w-44 bg-orange-000 rounded- justify-centers items-centesr border-0 m-1">
                    <p className="text-sm text-start text-white font-poppins ">Personalities Born On </p>
                   <p className="text-2xl text-orange-700 font-poppins text-">{userData?.yourDay}</p>
@@ -47,4 +48,4 @@ function BirthPersonalityDays() {
   )
 }
 
-export default BirthPersonalityDays
+export default BirthPersonalityDays;

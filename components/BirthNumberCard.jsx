@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react';
-//import type { RootState } from '../store'
+
 import { useSelector, useDispatch } from 'react-redux'
 
 import {numbers} from "../NumberData"
@@ -21,12 +21,11 @@ function BirthNumberCard() {
   },[])
   
 
-  //console.log("singleData",data)
 
   return (
     <div className=" flex py-2 mb-2 md:mb-12 flex-col space-y-4 items-center text-center p-1 select-none rounded-lg bg-[#AAFDee000] ">
           <div className="flex flex-col justify-center items-center">
-              {/* <p>Header</p> */}
+       
               <div className="flex h-12 w-12 bg-black rounded-full justify-center items-center border-2 m-1">
                   <p className="text-3xl text-gray-200 font-poppins  ">{userData.yourNumber}</p>
               </div>
@@ -34,7 +33,7 @@ function BirthNumberCard() {
 
           </div>
           <div className="flex flex-col  overflow-y-scroll scrollbar-hide pt-8  rounded-fulld w-full h-96 space-y-2 border-b-2 border-t-2 border-yellow-000  overflow-hidden items-center  " >
-            {/* <img className="rounded-full w-44" src={null} /> */}
+        
 
             <p className="border-b-2 w-44 p-1 text-gray-200 font-tapestry">Vibration</p>
             
@@ -75,4 +74,4 @@ function BirthNumberCard() {
   )
 }
 
-export default BirthNumberCard
+export default BirthNumberCard;
