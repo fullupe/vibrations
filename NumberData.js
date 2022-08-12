@@ -335,7 +335,7 @@ export const signs =[
 
   },
   {    id:12,
-      name:"Capricor",
+      name:"Capricorn",
       info:"Capricorn is the tenth astrological sign in the zodiac out of twelve total zodiac signs, originating from the constellation of Capricornus, the horned goat. It spans the 270–300th degree of the zodiac, corresponding to celestial longitude.",
       image:"https://res.cloudinary.com/fullupe/image/upload/v1651502368/zodiac-signs/carpricorn_khnkdt.png",
       element:"Earth",

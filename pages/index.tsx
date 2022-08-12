@@ -57,9 +57,9 @@ const Home: NextPage = () => {
 
  //},[])
 
- setTimeout(() => {
-  SetLoading(true);
-  }, 6000)
+//  setTimeout(() => {
+//   SetLoading(true);
+//   }, 6000)
 
 
   return (
