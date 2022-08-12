@@ -9,8 +9,9 @@ import BirthDayCard from './BirthDayCard'
 import BirthSignCard from './BirthSignsCard'
 import BirthNameCard from './BirthNameCard'
 import BirthElement from "./BirthElementsCard"
+import BirthPersonalityDay from "./BirthPersonalityDays"
 
-const dataClient=[<BirthNumberCard/>,<BirthDayCard/>,<BirthSignCard/>,<BirthElement/>,<BirthNameCard/>]
+const dataClient=[<BirthNumberCard/>,<BirthDayCard/>,<BirthSignCard/>,<BirthElement/>,<BirthPersonalityDay/>,<BirthNameCard/>]
 
 function Feed() {
   return (

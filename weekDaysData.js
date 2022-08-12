@@ -5,12 +5,14 @@
         akans:{male:"Kwadjo", female:"adwoa"},
         fantis:{male:"kodwo", female:"adwoa"},
         ewes:{male:"kodzo", female:"adzo"},
+        personalities:["Mark Zuckerberg (Founder of Facebook)","Bill Clinton (42nd U.S. President)","Lucky Dube (South African musician)","Tyson Gay (American track and field athlete)","Lil Wayne (American rapper)","Osagyefo Dr. Kwame Nkrumah (1st prez. GH)","Theresa May (British Prime Minister)"]
     },
     {   day:"Tuesday",
         message : "Mars Mars is an aggressive planet.  In fact, its namesake in Greek myth was the god of war.  Tuesday is a driving force in the workweek, and will auger a sense of productivity, competition, effectiveness, determination and completion.  With these kinds of energies in the forefront, Tuesday is the perfect day for finishing long overdue tasks.  Conversely, Tuesday is also a great day to start new projects.  Best tasks for Tuesdays:  Building strategies at work and in career, acting on new ideas, starting new projects, cleaning out clutter, exercising, finishing to-do lists or catching up.",
         akans:{male:"Kwabena", female:"abena"},
         fantis:{male:"kobena", female:"abena"},
         ewes:{male:"kobla", female:"abla"},
+        personalities:["Martin Luther King Jr.","Cristiano Ronald (Portuguese footballer)","Morgan Freeman (Actor)","Tom Cruise (American actor)","Myles Munroe (Bahamian minister)"," Mel Gibson (American actor & filmmaker)","The Late Robert Nesta Marley (Musician)"]
     },
 
     {
@@ -19,6 +21,7 @@
         akans:{male:"kwaku", female:"akua"},
         fantis:{male:"kweku", female:"ekua"},
         ewes:{male:"korku", female:"akuyo"},
+        personalities:["Lionel Messi (Footballer)","Robert Gabriel Mugabe (Ex-Prez. Zimbabwe)","Aliko Dangote (Dangote Group)","T. B. Joshua (Nigerian pastor)","Jackie Chan (Martial artist)","Saddam Hussei (Former President of Iraq)","Kanye West (American rapper)"]
     },
     {
         day:"Thursday",
@@ -26,6 +29,7 @@
         akans:{male:"yaw", female:"yaa"},
         fantis:{male:"yaw", female:"aba"},
         ewes:{male:"yawo", female:"awoyo"},
+        personalities:["Usain Bolt (Olympic athlete)","Floyd Mayweather (Former Boxer & Promoter)","JAY-Z (American rapper)","Pope Francis (266th Pope of the Catholic CH)","George H. W. Bush (41st U.S. President)","Nelson Mandela (Former Prez. of S. Africa)","Don Moen (American singer-songwriter)"]
     },
 
     {
@@ -34,6 +38,7 @@
         akans:{male:"kofi", female:"afia"},
         fantis:{male:"kofi", female:"efua"},
         ewes:{male:"kofi", female:"afi"},
+        personalities:["Barack Hussein Obama (EX. Prez. USA)","Donald Trump (Prez. USA)","Michael Jackson ( singer-songwriter)","Bill Gates (co-Founder of Microsoft)","Oprah Winfrey ( American media proprietor)","Kofi Annan (Fmr.  U.N Secretary-General)","Kevin Hart (American comedian)"]
     },
 
     {
@@ -42,6 +47,7 @@
         akans:{male:" kwame", female:"ama"},
         fantis:{male:"kwamena", female:"ama"},
         ewes:{male:"kwami", female:"amewa"},
+        personalities:["Diana, (Princess of Wales, 1st wife of Charles)","Rihanna (Singer, songwriter and actress)","Celine Dion (Canadian singer)","Serena Williams (American tennis player)","José Mourinho (Portuguese football manager)","Muhammad Ali (American professional boxer)","Chris Oyakhilome (Nigerian minister)"]
     },
     {
         day:"Sunday",
@@ -49,6 +55,7 @@
         akans:{male:"kwasi", female:"akosua"},
         fantis:{male:"kwesi", female:"esi"},
         ewes:{male:"korshi", female:"kwashiwor"},
+        personalities:["T. D. Jakes (Pastor)","Michael Phelps (American swimmer)","Manny Pacquiao ( boxer and politician)","Manny Pacquiao ( boxer and politician)","Kim Jong-un (Suprm Leader of North Korea)","M. Gaddafi (Former Prime Minister of Libya)","Osama bin Laden (Founder of al-Qaeda)"]
     }
 ];
 
