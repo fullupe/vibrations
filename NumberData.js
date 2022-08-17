@@ -217,7 +217,7 @@ export const signs =[
 
   },
   {    id:2,
-      name:"Scopio",
+      name:"Scorpio",
       info:"Scorpio is the eighth astrological sign in the zodiac, originating from the constellation of Scorpius. It spans 210°–240° ecliptic longitude. Under the tropical zodiac, the Sun transits this sign on average from October 23 to November 22.",
       image:"https://res.cloudinary.com/fullupe/image/upload/v1651502369/zodiac-signs/Scorpio_ypps3m.png",
       element:"Water",
@@ -359,14 +359,14 @@ export const weekdays=[
       akans:{male:"Kwadjo", female:"adwoa"},
       fantis:{male:"kodwo", female:"adwoa"},
       ewes:{male:"kodzo", female:"adzo"},
-      personalities:["Mark Zuckerberg (Founder of Facebook)","Bill Clinton (42nd U.S. President)","Lucky Dube (South African musician)","Tyson Gay (American track and field athlete)","Lil Wayne (American rapper)","Osagyefo Dr. Kwame Nkrumah (1st prez. GH)","Theresa May (British Prime Minister)"]
+      personalities:["Mark Zuckerberg (Founder of Facebook)","Bill Clinton (42nd U.S. President)","Lucky Dube (South African musician)","Tyson Gay (American track and field athlete)","Lil Wayne (American rapper)","Theresa May (British Prime Minister)"]
   },
   {   day:"Tuesday",
       message : "Mars Mars is an aggressive planet.  In fact, its namesake in Greek myth was the god of war.  Tuesday is a driving force in the workweek, and will auger a sense of productivity, competition, effectiveness, determination and completion.  With these kinds of energies in the forefront, Tuesday is the perfect day for finishing long overdue tasks.  Conversely, Tuesday is also a great day to start new projects.  Best tasks for Tuesdays:  Building strategies at work and in career, acting on new ideas, starting new projects, cleaning out clutter, exercising, finishing to-do lists or catching up.",
       akans:{male:"Kwabena", female:"abena"},
       fantis:{male:"kobena", female:"abena"},
       ewes:{male:"kobla", female:"abla"},
-      personalities:["Martin Luther King Jr.","Cristiano Ronald (Portuguese footballer)","Morgan Freeman (Actor)","Tom Cruise (American actor)","Myles Munroe (Bahamian minister)"," Mel Gibson (American actor & filmmaker)","The Late Robert Nesta Marley (Musician)"]
+      personalities:["Martin Luther King Jr.","Cristiano Ronald (Portuguese footballer)","Morgan Freeman (Actor)","Tom Cruise (American actor)","Myles Munroe (Bahamian minister)"," Mel Gibson (American actor & filmmaker)","The Late Robert Nesta Marley (Musician)","Osagyefo Dr. Kwame Nkrumah (1st prez. GH)"]
   },
 
   {
@@ -409,6 +409,6 @@ export const weekdays=[
       akans:{male:"kwasi", female:"akosua"},
       fantis:{male:"kwesi", female:"esi"},
       ewes:{male:"korshi", female:"kwashiwor"},
-      personalities:["T. D. Jakes (Pastor)","Michael Phelps (American swimmer)","Manny Pacquiao ( boxer and politician)","Manny Pacquiao ( boxer and politician)","Kim Jong-un (Suprm Leader of North Korea)","M. Gaddafi (Former Prime Minister of Libya)","Osama bin Laden (Founder of al-Qaeda)"]
+      personalities:["T. D. Jakes (Pastor)","Michael Phelps (American swimmer)","Manny Pacquiao ( boxer and politician)","Kim Jong-un (Suprm Leader of North Korea)","M. Gaddafi (Former Prime Minister of Libya)","Osama bin Laden (Founder of al-Qaeda)"]
   }
 ];
