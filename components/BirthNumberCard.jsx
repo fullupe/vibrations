@@ -1,8 +1,10 @@
 import React,{useState, useEffect} from 'react';
 
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 
-import {numbers} from "../NumberData"
+import {numbers} from "../NumberData";
+import Adsense from "../components/Adsense";
+
 
 
 function BirthNumberCard() {
@@ -69,6 +71,7 @@ function BirthNumberCard() {
           <h5 className=" italic text-yellow-300">{null}</h5>
             <small className=" text-lg  font-poppins ">
               {null}
+              <Adsense/>
             </small>
         </div>
   )

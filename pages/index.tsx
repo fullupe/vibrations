@@ -6,10 +6,6 @@ import { useState,useEffect} from 'react'
 import { IoIosArrowDropleft } from 'react-icons/io'
 import HomeEntry from '../components/HomeEntry';
 import Feed from "../components/Feed";
-import Adsense from "../components/Adsense";
-
-
-
 
 const Home: NextPage = () => {
 
@@ -20,22 +16,17 @@ const Home: NextPage = () => {
   const [submitdate, setSubmitdat]=useState(false)
 
    const[days, setDays]=useState([])
-   //const[months, setMonths]=useState<any>([])
+
    const[years, setYears]=useState([])
 
-   //const todayNumber = new Date().toLocaleString().replaceAll("/",'')
 
-// useEffect(()=>{
   const d = new Date().getDate()
   const m = new Date().getMonth()
   const y = new Date().getFullYear()
 
   console.log("now",  y, m+1 , d)
 
-// },[])
-  
 
- //useEffect(()=>{
 
 
   function digitSum(n:any) {
@@ -49,17 +40,6 @@ const Home: NextPage = () => {
 
     return n;
 }
-
- 
-
- 
- //console.log("pl", digitSum(`${d}${m+1}${y}`))
-
- //},[])
-
-//  setTimeout(() => {
-//   SetLoading(true);
-//   }, 6000)
 
 
   return (
@@ -78,7 +58,7 @@ const Home: NextPage = () => {
 
         <IoIosArrowDropleft onClick={()=>setSubmitdat(false)} className="text-white text-4xl"/>
 
-        <Adsense/>
+ 
       
         </div>
 
@@ -108,26 +88,6 @@ const Home: NextPage = () => {
     
       <Feed/> 
      
-      //   <>
- 
-
-      //   {
-
-
-      //  Loading ? (
-
-      //    <Circles color="#FC6238" height={50} width={80} />
-      //  ):(
-
-      //    <Feed/> 
-      //  )
-      
-      //   }
-
-      //   </>
-
-      
-        
 
     )}
     </div>

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux';
+import Adsense from "../components/Adsense";
+
 
 
 import {weekdays}  from "../NumberData"
@@ -46,6 +48,7 @@ function BirthDayCard() {
           <h5 className=" italic text-yellow-300">{null}</h5>
             <small className=" text-lg  font-poppins ">
               {null}
+              <Adsense/>
             </small>
         </div>
   )

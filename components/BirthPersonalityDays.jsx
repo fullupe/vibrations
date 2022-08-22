@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import {weekdays} from "../NumberData"
-import { FaLocationArrow} from 'react-icons/fa'
+import { FaLocationArrow} from 'react-icons/fa';
+import Adsense from "../components/Adsense";
+
 
 
 function BirthPersonalityDays() {
@@ -44,6 +46,7 @@ function BirthPersonalityDays() {
             <small className=" text-lg  font-poppins ">
               {null}
             </small>
+            <Adsense/>
         </div>
   )
 }

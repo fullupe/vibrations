@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
-import {signs} from "../NumberData"
+import {signs} from "../NumberData";
+import Adsense from "../components/Adsense";
+<Adsense/>
 
 function BirthElementCard() {
   const userData = useSelector((state) => state.weekday.value)

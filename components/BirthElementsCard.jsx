@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 
-import {signs} from "../NumberData"
+import {signs} from "../NumberData";
+import Adsense from "../components/Adsense";
+
 
 function BirthElementsCard() {
 
@@ -39,6 +41,7 @@ function BirthElementsCard() {
             
           </div>
           
+          <Adsense/>
            
         </div>
   )
