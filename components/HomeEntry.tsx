@@ -8,8 +8,8 @@ import { useSelector, useDispatch } from 'react-redux'
 import { addWeekDay } from '../slices/WeekDaySlice'
 
 // Load spinner component only on the client to avoid SSR errors
-const Circles = dynamic(
-  () => import('react-loader-spinner').then((mod) => mod.Circles),
+const Circles = dynamic<any>(
+  () => import('react-loader-spinner').then((mod) => (mod as any).Circles),
   { ssr: false },
 )
 
