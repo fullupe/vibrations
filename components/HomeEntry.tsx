@@ -149,12 +149,12 @@ function HomeEntry({ setSubmitdat, submitdate }: props) {
 
   return (
     <div className="flex flex-col items-center">
-      {selectedDay && (
+      {/* {selectedDay && (
         <>
           <Circles color="#FC6238" height={50} width={80} />
           <p className="text-white font-poppins italic">Ready...🚀</p>
         </>
-      )}
+      )} */}
 
       <div className="flex  h-[400px] items-center bg-blue-000  justify-center">
         <select
@@ -212,7 +212,10 @@ function HomeEntry({ setSubmitdat, submitdate }: props) {
 
       <div className="flex flex-col items-center w-full justify-center p-8">
         {selectedDay && (
+          <>
           <FaRegArrowAltCircleDown className="text-white animate-bounce" />
+          <span className="text-white font-poppins italic">Click</span>
+          </>
         )}
         <button
           className=" h-full bg-[#a2203e] hover:cursor-pointer font-poppins  w-44 hover:bg-[#530319] text-white font-bold opacity-80 py-2 px-4 rounded-full transition-all my-5"
